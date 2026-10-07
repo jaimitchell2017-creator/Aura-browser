@@ -1,0 +1,1 @@
+const{contextBridge,ipcRenderer}=require("electron");contextBridge.exposeInMainWorld("aura",{navigate:u=>ipcRenderer.invoke("navigate",u),back:()=>ipcRenderer.invoke("back"),forward:()=>ipcRenderer.invoke("forward"),reload:()=>ipcRenderer.invoke("reload"),devtools:()=>ipcRenderer.invoke("devtools"),page:()=>ipcRenderer.invoke("page")});

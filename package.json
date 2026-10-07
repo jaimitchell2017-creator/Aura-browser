@@ -1,0 +1,7 @@
+{
+  "name":"aura-browser","version":"1.0.0","description":"Aura Browser","main":"main.js",
+  "scripts":{"start":"electron .","build":"electron-builder"},
+  "dependencies":{"electron":"^38.0.0"},
+  "devDependencies":{"electron-builder":"^26.0.0"},
+  "build":{"appId":"com.aura.browser","productName":"Aura Browser","win":{"target":"nsis"},"mac":{"target":"dmg"},"linux":{"target":"AppImage"}}
+}
